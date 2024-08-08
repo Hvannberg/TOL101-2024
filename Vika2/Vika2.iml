@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="CheckStyle-IDEA-Module" serialisationVersion="2">
+    <option name="activeLocationsIds" />
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$" />
+    <output-test url="file:///test/Vika2" />
+    <content url="file://$MODULE_DIR$/2.1">
+      <sourceFolder url="file://$MODULE_DIR$/2.1" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/2.2">
+      <sourceFolder url="file://$MODULE_DIR$/2.2" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
