@@ -1,8 +1,8 @@
 /******************************************************************************
- *  Nafn    : Nafn nemanda
- *  T-póstur: xxx@hi.is
+ *  Nafn    : Ebba Þóra Hvannberg
+ *  T-póstur: ebba@hi.is
  *
- *  Lýsing  : Lýsing á hvað forritið gerir, inntak, útreikningar, úttak
+ *  Lýsing  : Prentar út formúlu sem texta og prentar út útkomu úr formúlunni
  *
  *
  *****************************************************************************/
