@@ -79,7 +79,8 @@ public class ArrayFunctionExamples {
     }
 
     public static void main(String[] args) {
-        System.out.println (mean (new double[ ]{2.0, 3.5, 10.7}));
+        System.out.println(mean(new double[] { 2.0, 3.5, 10.7 }));
+
     }
 
 }
