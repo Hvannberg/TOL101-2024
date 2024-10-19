@@ -44,7 +44,7 @@ public class Haekkun {
 
         int a = 2;
         int b = 4;
-        a += --b + 2; // hér er lækkar b um einn áður en gildið er sótt
+        a += --b + 2; // hér  lækkar b um einn áður en gildið er sótt
         System.out.println("a er " + a + " b er " + b);
     }
 }

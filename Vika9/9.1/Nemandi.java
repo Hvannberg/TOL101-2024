@@ -24,20 +24,34 @@ public class Nemandi {
         tPostur = t;
     }
 
-    // gettera og settera þarf ekki að skjala
+    /**
+     * Skilar tilviksbreytu sem inniheldur tölvupóst
+     * @return tölvupósti
+     */
     public String gettPostur() {
         return tPostur;
     }
 
+    /**
+     * Skilar tilviksbreytu nafni nemanda
+     * @return nafni
+     */
     public String getNafn() {
         return nafn;
     }
 
+    /**
+     * Uppfærir nafn nemanda
+     * @param nafn nafn nemanda
+     */
     public void setNafn(String nafn) {
         this.nafn = nafn;
     }
 
-
+    /**
+     * Skilar streng sem lýsir hlutnum
+     * @return strengur sem sýnir gildi á tilviksbreytum
+     */
     public String toString() {
         return "Nemandi{" +
                 "nafn='" + nafn + '\'' +
@@ -72,11 +86,18 @@ public class Nemandi {
                 .equals(tPostur, nemandi.tPostur);
     }
 
+    /**
+     * Býr til hakkagildi fyrir hlutin
+     * @return hakkagildi hlutarins
+     */
     public int hashCode() {
         return Objects.hash(nafn, tPostur);
     }
 
-    // lítið prófunaraktygi
+    /**
+     * Mjög lítið prófunaraktygi
+     * @param args ónotað
+     */
     public static void main(String[] args) {
         Nemandi n = new Nemandi("Bjarney", "b2@hi.is");
         System.out.println(n);

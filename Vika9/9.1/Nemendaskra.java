@@ -63,10 +63,12 @@ public class Nemendaskra {
             nemendur[i] = nemendur[i + 1];
         }
         fjoldiNemenda--;
-
-
     }
 
+    /**
+     * Skilar nemendalista sem streng
+     * @return strengur sem inniheldur nemendur
+     */
     public String nemendalisti() {
         String listi="";
         for (int i=0;i<fjoldiNemenda;i++ ) {
@@ -75,6 +77,10 @@ public class Nemendaskra {
         return listi;
     }
 
+    /**
+     * Býr til streng sem lýsir hlutnum
+     * @return strengur sem lýsir Nemendaskra hlutnum
+     */
     public String toString() {
         return "Nemendaskra{" +
                 "nafnSkola='" + nafnSkola + '\'' +
@@ -84,6 +90,10 @@ public class Nemendaskra {
                 '}';
     }
 
+    /**
+     * Prófunaraktygi. Clientklasinn er þó í ClientNemendaskra
+     * @param args ónotað
+     */
     public static void main(String[] args) {
 
     }

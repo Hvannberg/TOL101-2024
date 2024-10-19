@@ -11,7 +11,7 @@ import java.util.Scanner;
  *  Notkunardæmi:
  *  java StrengjaHastafir
  *      Góðan daginn
- * Eftir strengjavinnslu:Góðan daginn.
+ * Eftir strengjavinnslu:GÓÐAN DAGINN.
  *
  *
  *****************************************************************************/

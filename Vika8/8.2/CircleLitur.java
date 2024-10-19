@@ -16,8 +16,9 @@ import java.util.Scanner;
 
 public class CircleLitur {
 
-    // klasabreyta
+    // klasabreyta (static)
     private static Random random = new Random(); // random generator
+
     // tilviksbreytur
     private double radius = 1;  // sjálfgefið gildi tilviksbreytu
     private Point midja = new Point(0, 0); // miðja hrings
@@ -74,16 +75,28 @@ public class CircleLitur {
         return radius * radius * Math.PI;
     }
 
-    // get og set aðferðir - þarf ekki að skjala - Búið til með Alt-Insert
+    // get og set aðferðir - Búið til með Alt-Insert
+
+    /**
+     * skila radíus eiginleikanum
+     * @return radíus
+     */
     public double getRadius() {
         return radius;
     }
 
+    /**
+     * setja radíus eiginleikann
+     * @param radius
+     */
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
-    // sýnir gildi hlutarins
+    /**
+     * Skilar streng sem sýnir innihald hlutarins
+     * @return strengur með gildum hlutarins
+     */
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
@@ -116,10 +129,10 @@ public class CircleLitur {
 
         // geyma hringina í fylki
         CircleLitur [] margirHringir = new CircleLitur [FJOLDI];
+
         for (int i = 0; i < FJOLDI; i++) {
 
             // Búinn er til CircleLitur hlutur með radíus RADIUS, slembilit og slembimiðju
-
             CircleLitur circle = new CircleLitur(RADIUS, new Color(random.nextInt(MAX),
                                                                    random.nextInt(MAX),
                                                                    random.nextInt(MAX)),
@@ -127,19 +140,20 @@ public class CircleLitur {
                                                            random.nextInt(N)));
             // Setja hring í fylki
             margirHringir[i] = circle;
+            // teikna hringinn
             circle.draw();
         }
         //
         System.out.print ("Viltu hreinsa teikninguna? ");
         String svar = inntak.next();
-        if (svar.equals ("já")) {
+        if (svar.equalsIgnoreCase ("já")) {
             StdDraw.clear();
         }
 
         // Birta sömu teikningu aftur
         System.out.print ("Viltu birta teikninguna? ");
         svar = inntak.next();
-        if (svar.equals ("já")) {
+        if (svar.equalsIgnoreCase ("já")) {
             for (int i=0; i<FJOLDI; i++) {
                 margirHringir[i].draw();
             }

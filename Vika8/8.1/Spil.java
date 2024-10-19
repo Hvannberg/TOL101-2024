@@ -5,7 +5,7 @@ import java.util.Scanner;
  *  Nafn    : Ebba Þóra Hvannberg
  *  T-póstur: ebba@hi.is
  *
- *  Lýsing  :
+ *  Lýsing  : Klasi sem inniheldur upplýsingar um mannspil. 
  *
  *
  *****************************************************************************/

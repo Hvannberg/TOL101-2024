@@ -11,12 +11,7 @@ import java.util.Scanner;
  *
  *****************************************************************************/
 
-public class
-
-
-
-
-MinFall {
+public class MinFall {
     public static int min(int a, int b) {
         System.out.println ("min int útgáfan");
         if (a < b) {

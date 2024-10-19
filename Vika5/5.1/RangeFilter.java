@@ -26,7 +26,7 @@ public class RangeFilter {
 
             // print out the given integer if it's between lo and hi
             if (t >= lo && t <= hi) {
-                System.out.println(t + " ");
+                System.out.println(t);
             }
         }
         System.out.println();

@@ -17,7 +17,7 @@ public class ClientNemendaskra {
         Scanner inntak = new Scanner(System.in, StandardCharsets.UTF_8);
         int staerdSkola = inntak.nextInt();
         Nemendaskra hi = new Nemendaskra("Háskóli Íslands", staerdSkola);
-        System.out.println (" tóm nemendaskrá ");
+        System.out.println ("tóm nemendaskrá ");
         System.out.println(hi);
         Nemandi nem1 = new Nemandi("Blær", "b@hi.is");
         if (hi.erLaustPlass())  // gæta þess að forskilyrðið haldi
