@@ -49,9 +49,10 @@ public class Circle extends GeometricObject {
      * @param filled fylltur
      */
     public Circle(double radius, Color color, boolean filled) {
-        // super(color, filled);
-        setColor(color);
-        setFilled(filled);
+        super(color, filled); // köllum á smiðinn í GeometricObjecjt
+        // sem tekur inn 2 parametra Color og boolean
+       // setColor(color);
+       // setFilled(filled);
         this.radius = radius;
         this.center = new Point(0, 0);
     }
