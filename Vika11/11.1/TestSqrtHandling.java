@@ -1,5 +1,6 @@
 import java.nio.charset.StandardCharsets;
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 /******************************************************************************
@@ -21,6 +22,7 @@ public class TestSqrtHandling {
     public static void main(final String[] args) {
         try {
             Scanner inntak = new Scanner(System.in, StandardCharsets.UTF_8);
+            inntak.useLocale(Locale.US);
             double num = inntak.nextDouble();
             if (num >= 0.0) {
                 System.out.println("Sqrt is " + Math.sqrt(num));

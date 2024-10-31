@@ -30,6 +30,7 @@ public class QuotientFall {
         catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         }
+
         System.out.println("The execution continues ..");
     }
 }

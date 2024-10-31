@@ -13,12 +13,14 @@ import java.util.Scanner;
 
 public class TestSqrt {
     public static void main(String[] args) {
-            Scanner inntak = new Scanner (System.in, StandardCharsets.UTF_8);
-            double num = inntak.nextDouble();
-            if (num >= 0.0) {
-                System.out.println("Sqrt is " + Math.sqrt(num));
-            }
+        double num = 0;
+        Scanner inntak = new Scanner(System.in, StandardCharsets.UTF_8);
+        num = inntak.nextDouble();
+        if (num >= 0.0) {
+            System.out.println("Sqrt is " + Math.sqrt(num));
+        }
     }
 }
+
 
 

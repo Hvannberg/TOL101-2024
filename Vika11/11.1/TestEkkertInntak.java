@@ -17,7 +17,7 @@ public class TestEkkertInntak {
             int num = Integer.parseInt(args[0]);
             System.out.println("Notandi sló inn tölu á skipanalínu " + num);
         }
-        catch (NumberFormatException e) {
+        catch (NumberFormatException e) { // vaktkar að notandi skrifi heiltölu á skipanalínu
             System.out.println("Inntak verður að vera heiltala " + e.getMessage());
         }
         catch (ArrayIndexOutOfBoundsException e) {
