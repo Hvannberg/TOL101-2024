@@ -14,7 +14,7 @@ import java.io.File;
 public class ReadData {
     public static void main(String[] args) throws Exception {
         // Create a File instance
-        File file = new File("Vika11/scores.txt");
+        File file = new File("Vika11/nyscores.txt");
 
         // Create a Scanner for the file
         Scanner input = new Scanner(file, StandardCharsets.UTF_8);
