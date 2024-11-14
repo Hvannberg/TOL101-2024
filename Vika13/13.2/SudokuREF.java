@@ -69,7 +69,7 @@ public class SudokuREF {
     }
 
     /**
-     * Athugar hvort bord af i, j er lögleg í blokkinni
+     * Athugar hvort bord[i][j] er lögleg í blokkinni
      *
      * @param i    röðin
      * @param j    dálkurinn
@@ -77,14 +77,15 @@ public class SudokuREF {
      * @return true ef löglegt annars false
      */
     private static boolean erLoglegBlokk(int i, int j, int[][] bord) {
+        // ítrum yfir umlykjanndi blokkina af sellu i, j
         for (int rod = i / 3 * 3; rod < i / 3 * 3 + 3; rod++) {
             for (int dalkur = j / 3 * 3; dalkur < j / 3 * 3 + 3; dalkur++) {
                 if (!(rod == i && dalkur == j) && bord[rod][dalkur] == bord[i][j]) {
-                    return true;
+                    return false;
                 }
             }
         }
-        return false;
+        return true;
     }
 
     /**

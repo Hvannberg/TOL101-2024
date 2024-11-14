@@ -66,8 +66,8 @@ public class Sudoku {
         }
 
         // athugum hvort bord [i][j] er lögleg í blokkinni
-        for (int rod = i / 3 * 3; rod < i / 3 * 3 + 3; rod++) {
-            for (int dalkur = j / 3 * 3; dalkur < j / 3 * 3 + 3; dalkur++) {
+        for (int rod = (i / 3) * 3; rod < (i / 3) * 3 + 3; rod++) {
+            for (int dalkur = (j / 3) * 3; dalkur < (j / 3) * 3 + 3; dalkur++) {
                 if (!(rod == i && dalkur == j) && bord[rod][dalkur] == bord[i][j]) {
                     return false;
                 }
